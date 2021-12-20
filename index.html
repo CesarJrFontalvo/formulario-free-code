@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Formulario</h1>
+      <p id="description">Este formulario es para fines academicos</p>
+
+      <form id="survey-form">
+        <label id="name-label">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Ingresa tu nombre"
+          required
+        />
+        <div>
+          <label id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Ingresa tu email"
+            required
+          />
+        </div>
+
+        <div>
+          <label id="number-label" for="number">Edad</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="8"
+            max="70"
+            placeholder="Edad"
+          />
+        </div>
+
+        <div>
+          <p>Selecciona la opción que se ajuste</p>
+          <select id="dropdown">
+            <option disabled selected value>Selecciona tu rol</option>
+            <option value="desarrolladorWeb">Desarrollador Web</option>
+            <option value="fron-end">Front-end</option>
+            <option value="backend">Backend</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <p>Que plataforma de estudio te gusta más ?</p>
+          <label>
+            <input name="name" value="Platzi" type="radio" />Platzi</label
+          >
+          <label>
+            <input
+              name="name"
+              value="Academia    Geek"
+              type="radio"
+              checked
+            />Academia Geek</label
+          >
+          <label> <input name="name" value="Udemy" type="radio" />Udemy</label>
+        </div>
+
+        <div>
+          <p>Que usas más</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Selecciona una opción</option>
+            <option value="editor-de-ccdigo">Editor de código</option>
+            <option value="framework">Framework</option>
+          </select>
+        </div>
+
+        <div>
+          <p>¿Que lenguaje te gustaria aprender?</p>
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+        </div>
+
+        <div>
+          <p>¿Algún comentario o sugerencia?</p>
+          <textarea
+            name="comentario"
+            placeholder="Deja tu comentario aquí"
+            id="comentario"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div>
+          <button type="submit" id="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
